@@ -4,17 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Art Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            max-width: 300px;
+            width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery img:hover {
+            border-color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1>Dental Art Preview</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <!-- Add other navigation links here -->
             </ul>
         </nav>
     </header>
-    <!-- Rest of your page content -->
+
+    <section id="home">
+        <h2>Welcome to Dental Art Preview</h2>
+        <p>This is the home page content. Add your introductory content here.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="1%202.jpg" alt="Image 1">
+            <img src="2%202.jpg" alt="Image 2">
+            <img src="crowns%20and%20removable%20prosthesys.jpg" alt="Crowns and Removable Prostheses">
+            <img src="smile%20makeover%208%20.jpg" alt="Smile Makeover">
+            <img src="veneers%20smile%20makover.jpg" alt="Veneers Smile Makeover">
+            <img src="zirconium%20smile%20makover%2010.jpg" alt="Zirconium Smile Makeover">
+        </div>
+    </section>
 </body>
 </html>
