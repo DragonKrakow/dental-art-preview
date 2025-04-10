@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            max-width: 300px;
+            width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery img:hover {
+            border-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    <div class="gallery">
+        <img src="1%202.jpg" alt="Image 1">
+        <img src="2%202.jpg" alt="Image 2">
+        <img src="crowns%20and%20removable%20prosthesys.jpg" alt="Crowns and Removable Prostheses">
+        <img src="smile%20makeover%208%20.jpg" alt="Smile Makeover">
+        <img src="veneers%20smile%20makover.jpg" alt="Veneers Smile Makeover">
+        <img src="zirconium%20smile%20makover%2010.jpg" alt="Zirconium Smile Makeover">
+    </div>
+</body>
+</html>
